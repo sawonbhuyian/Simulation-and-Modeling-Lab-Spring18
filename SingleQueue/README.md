@@ -1,6 +1,6 @@
 # Single queue project solve in c++
 ## Files
 
-[ file1 ](https://pastebin.ubuntu.com/26480410)
+[ Source code](https://pastebin.ubuntu.com/26485139/)
 # 
-[ file2 ](https://pastebin.ubuntu.com/26480414)
+[ input txt ](https://pastebin.ubuntu.com/26485144/)
