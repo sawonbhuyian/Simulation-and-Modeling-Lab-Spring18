@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
+
 #define max 100000
 int  rnd_arrival[max],rnd_service[max],arrival[max],service[max],arrival_time[max],service_begins[max];
 int wait_in_queue[max],service_ends[max],spends_in_system[max],idle_time[max];
@@ -8,7 +9,6 @@ int main()
 {
 
     freopen("sinput.txt","r",stdin);
-    //freopen("spoutput.txt","w",stdout);
     int noc,nor,x=0,service_time_total=0,wait_in_queue_total=0,spends_in_system_total=0,idle_time_total=0;
 
     printf("Enter number of customer: ");
@@ -16,8 +16,8 @@ int main()
     printf("Input %d random digits for Arrival times and Service times\n",nor);
     arrival_time[0]=0;
     service_ends[0]=0;
+    
     for(int i=1;i<=noc;++i){
-      //  printf("Enter 2 random digits for customer %d : ",i);
         scanf("%d %d",&rnd_arrival[i],&rnd_service[i]);
 
         if(rnd_arrival[i]>=1 && rnd_arrival[i]<=125) arrival[i]=1;
@@ -84,6 +84,7 @@ int main()
     for(int i=1;i<=noc;++i){
         printf("%5d%7d%9d%9d%9d%9d%9d%10d%9d\n",i,arrival[i],arrival_time[i],service[i],service_begins[i],wait_in_queue[i],service_ends[i],spends_in_system[i],idle_time[i]);
     }
+    
     printf("\t\t\t    ---\t\t      ---\t\t---\t  ---\n");
     printf("\t\t\t    %d\t\t      %d\t\t%d\t  %d\n", service_time_total, wait_in_queue_total,spends_in_system_total,idle_time_total);
 
