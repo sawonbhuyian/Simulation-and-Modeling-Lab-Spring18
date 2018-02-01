@@ -1,3 +1,4 @@
+
 def printf(str, *args):
     print(str % args, end='')  
 
